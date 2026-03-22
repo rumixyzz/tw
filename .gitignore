@@ -1,2 +1,3 @@
 .config/zsh/.zcomp*
 .config/zsh/*hist*
+.config/qtile/*pycache*
