@@ -1,4 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 xset r rate 150 70
-
 exec qtile start
