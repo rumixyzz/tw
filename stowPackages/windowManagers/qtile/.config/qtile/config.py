@@ -165,7 +165,7 @@ screens = [
                     **rect("#3c3836")
                     ),
                 widget.Spacer(length=8),
-                widget.WindowName(**rect("#3c3836"), width=bar.CALCULATED, format="{name}", empty_group_string=""),
+                widget.WindowName(**rect("#3c3836"), width=bar.CALCULATED, format="{name}", empty_group_string="", max_chars=70),
 
                 widget.Spacer(lenght=bar.STRETCH),
 
