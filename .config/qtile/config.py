@@ -171,7 +171,7 @@ screens = [
 
                 # right
                 widget.Systray(),
-                widget.Spacer(length=8),
+                widget.Spacer(length=16),
                 
                 widget.TextBox(text="",                **rect("#cc241d"), foreground="#282828"),
                 widget.Battery(format="{percent:2.0%}", **rect("#3c3836")                      ),
