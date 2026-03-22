@@ -1,0 +1,18 @@
+#!/bin/sh
+dotcopy() {
+  src="$HOME/$1"
+  dest="$HOME/tw/$1"
+
+  if [ -d "$src" ]; then
+    rsync -av --delete --mkpath "$src/" "$dest/"
+  elif [ -f "$src" ]; then
+    rsync -av --mkpath "$src" "$dest"
+  else
+    echo "dotcopy: '$1' does not exist"
+  fi
+}
+
+dotfiles=".config/fontconfig .config/alacritty .config/qtile .config/zsh .config/nvim .zshenv .xinitrc .local/bin"
+for i in $dotfiles; do
+    dotcopy "$i"
+done
