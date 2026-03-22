@@ -12,7 +12,7 @@ dotcopy() {
   fi
 }
 
-dotfiles=".config/fontconfig .config/alacritty .config/qtile .config/zsh .config/nvim .zshenv .xinitrc .local/bin"
+dotfiles=".config/fontconfig .config/alacritty .config/qtile .config/zsh .config/nvim .zshenv .xinitrc .local/bin .local/share/bg"
 for i in $dotfiles; do
     dotcopy "$i"
 done

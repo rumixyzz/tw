@@ -188,7 +188,7 @@ screens = [
             42,
             background="#282828"
         ),
-        wallpaper="~/Downloads/leaves-4.jpg"
+        wallpaper="~/.local/share/bg"
     ),
 ]
 
